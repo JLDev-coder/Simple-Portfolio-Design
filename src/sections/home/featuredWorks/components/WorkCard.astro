@@ -1,20 +1,25 @@
+---
+interface Props {
+  title: string;
+  img: string;
+  date: string;
+  tag: string;
+  description: string;
+}
+
+const { title, img, date, tag, description } = Astro.props;
+---
+
 <div class="container">
-  <img
-    src="../../../../../public/Rectangle30.png"
-    alt=""
-    width="246"
-    height="184"
-  />
+  <img src={img} alt="" width="246" height="184" />
   <div class="text-container">
-    <h1 class="title">Designing Dashboards</h1>
+    <h1 class="title">{title}</h1>
     <div class="date-tag">
-      <span class="date">2020</span>
-      <span class="tag"><p>Dashboard</p></span>
+      <span class="date">{date}</span>
+      <span class="tag"><p>{tag}</p></span>
     </div>
     <p class="description">
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-      Velit officia consequat duis enim velit mollit. Exercitation veniam
-      consequat sunt nostrud amet.
+      {description}
     </p>
   </div>
 </div>
@@ -54,6 +59,7 @@
   .step {
     margin-left: 148px;
     margin-right: 148px;
+    margin-bottom: 31px;
     height: 1px;
     width: calc(100% - 148px - 148px);
     background-color: #e0e0e0;

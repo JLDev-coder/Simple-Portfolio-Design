@@ -2,4 +2,42 @@
 import WorkCard from "./components/WorkCard.astro";
 ---
 
-<WorkCard />
+<div class="container">
+  <h1 class="title">Featured Works</h1>
+
+  <div class="work-card-container">
+    <WorkCard
+      title="Designing Dashboards"
+      img="../../../../../public/Rectangle30.png"
+      date="2020"
+      tag="Dashboard"
+      description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    />
+    <WorkCard
+      title="Vibrant Portraits of 2020"
+      img="../../../../../public/Rectangle32.png"
+      date="2018"
+      tag="Illustration"
+      description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    />
+    <WorkCard
+      title="36 Days of Malayalam type"
+      img="../../../../../public/Rectangle34.png"
+      date="2018"
+      tag="Typography"
+      description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    />
+  </div>
+</div>
+
+<style>
+  .title {
+    font-size: 22px;
+    color: #21243d;
+    font-family: "Heebo-Regular";
+    margin-left: 148px;
+    margin-right: 148px;
+    margin-bottom: 46px;
+    margin-top: 46px;
+  }
+</style>
