@@ -1,0 +1,48 @@
+---
+
+---
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="/works">Works</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  @font-face {
+    font-family: "Heebo-medium";
+    src: url("../../public/heebo/Heebo-Medium.ttf"); /*Just the medium */
+  }
+
+  header {
+    margin-top: 27px;
+    margin-right: 60px;
+  }
+  header > nav > ul > li {
+    list-style: none;
+    margin-left: 33px;
+  }
+
+  header > nav > ul > li > a {
+    text-decoration: none;
+    font-family: "Heebo-medium";
+    font-size: 20px;
+    color: #000;
+    transition: ease-in-out 0.2s;
+  }
+
+  header > nav > ul > li > a:hover {
+    color: #ff6464;
+    transition: ease-in-out 0.2s;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+</style>

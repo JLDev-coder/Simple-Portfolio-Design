@@ -1,0 +1,74 @@
+---
+import PostCard from "./components/PostCard.astro";
+---
+
+<div class="posts-container">
+  <div class="text-container">
+    <p class="recent-posts">Recent Posts</p>
+    <a href="/blog" class="view-all">View all</a>
+  </div>
+  <div class="posts">
+    <PostCard
+      title="Making a design system from scratch"
+      date="12 Feb 2020"
+      tag="Design, Pattern"
+      description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    />
+    <PostCard
+      title="Creating pixel perfect icons in Figma"
+      date="12 Feb 2020"
+      tag="Figma, Icon Design"
+      description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    />
+  </div>
+</div>
+
+<style>
+  .posts-container {
+    background-color: #edf7fa;
+    padding-left: 148px;
+    padding-right: 148px;
+    margin-top: 20px;
+    padding-bottom: 32px;
+  }
+
+  .text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+
+  .recent-posts {
+    font-size: 22px;
+    font-family: "Heebo-Regular";
+    color: #21243d;
+  }
+
+  .view-all {
+    font-size: 16px;
+    font-family: "Heebo-Regular";
+    text-decoration: none;
+    color: #00a8cc;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .view-all:link,
+  .view-all:visited {
+    color: #00a8cc;
+  }
+
+  .view-all:hover {
+    color: #0589a7;
+  }
+
+  .view-all:active {
+    color: #01596d;
+  }
+
+  .posts {
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
